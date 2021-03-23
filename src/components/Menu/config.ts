@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pancakeswap.finance/',
+    href: 'https://cacaodefi.finance/',
   },
   {
     label: 'Trade',
@@ -24,13 +24,18 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://pancakeswap.finance/farms',
+    href: 'https://cacaodefi.finance/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://pancakeswap.finance/syrup',
-  }
+    href: 'https://cacaodefi.finance/pool',
+  },
+  {
+      label: "Lottery",
+      icon: "TicketIcon",
+      href: "https://cacaodefi.finance/lotery",
+  },
 ]
 
 export default config
