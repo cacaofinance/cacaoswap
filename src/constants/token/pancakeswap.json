@@ -11,6 +11,15 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
+      "name": "CACAO",
+      "symbol": "CACAO",
+      "address": "0x93af74c2dbd8c6bb2d2914c243e0271781a5f465",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cacaodefi.finance/logocacao.png"
+
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",

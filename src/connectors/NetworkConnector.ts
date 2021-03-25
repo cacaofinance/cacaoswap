@@ -92,6 +92,7 @@ class MiniRpcProvider implements AsyncSendable {
     }, {})
     // eslint-disable-next-line no-restricted-syntax
     for (const result of json) {
+      
       const {
         resolve,
         reject,
