@@ -113,9 +113,9 @@ export default function CurrencyInputPanel({
         {!hideInput && (
           <LabelRow>
             <RowBetween>
-              <Text fontSize="14px">{translatedLabel}</Text>
+              <Text fontSize="14px" color="black">{translatedLabel}</Text>
               {account && (
-                <Text onClick={onMax} fontSize="14px" style={{ display: 'inline', cursor: 'pointer' }}>
+                <Text color="black" onClick={onMax} fontSize="14px" style={{ display: 'inline', cursor: 'pointer' }}>
                   {!hideBalance && !!currency && selectedCurrencyBalance
                     ? `Balance: ${selectedCurrencyBalance?.toSignificant(6)}`
                     : ' -'}
@@ -157,11 +157,11 @@ export default function CurrencyInputPanel({
                 <CurrencyLogo currency={currency} size="24px" style={{ marginRight: '8px' }} />
               ) : null}
               {pair ? (
-                <Text>
+                <Text color="black">
                   {pair?.token0.symbol}:{pair?.token1.symbol}
                 </Text>
               ) : (
-                <Text>
+                <Text color="black">
                   {(currency && currency.symbol && currency.symbol.length > 20
                     ? `${currency.symbol.slice(0, 4)}...${currency.symbol.slice(
                         currency.symbol.length - 5,

@@ -59,7 +59,7 @@ export default function CommonBases({
           return (
             <BaseWrapper onClick={() => !selected && onSelect(token)} disable={selected} key={token.address}>
               <CurrencyLogo currency={token} style={{ marginRight: 8 }} />
-              <Text>{token.symbol}</Text>
+              <Text color="black">{token.symbol}</Text>
             </BaseWrapper>
           )
         })}

@@ -43,7 +43,7 @@ export default function SwapModalFooter({
     <>
       <AutoColumn gap="0px">
         <RowBetween align="center">
-          <Text fontSize="14px">Price</Text>
+          <Text fontSize="14px" color="#fff">Price</Text>
           <Text
             fontSize="14px"
             style={{
@@ -64,7 +64,7 @@ export default function SwapModalFooter({
 
         <RowBetween>
           <RowFixed>
-            <Text fontSize="14px">
+            <Text fontSize="14px" color="#fff">
               {trade.tradeType === TradeType.EXACT_INPUT
                 ? TranslateString(1210, 'Minimum received')
                 : TranslateString(220, 'Maximum sold')}
