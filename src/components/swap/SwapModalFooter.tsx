@@ -64,7 +64,7 @@ export default function SwapModalFooter({
 
         <RowBetween>
           <RowFixed>
-            <Text fontSize="14px" color="#fff">
+            <Text fontSize="14px">
               {trade.tradeType === TradeType.EXACT_INPUT
                 ? TranslateString(1210, 'Minimum received')
                 : TranslateString(220, 'Maximum sold')}
