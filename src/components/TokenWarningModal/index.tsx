@@ -108,25 +108,25 @@ export default function TokenWarningModal({
             <StyledWarningIcon />
             <Text color="failure">{TranslateString(1128, 'Token imported')}</Text>
           </AutoRow>
-          <Text>
+          <Text color="#000">
             {TranslateString(
               1130,
               'Anyone can create a BEP20 token on BSC with any name, including creating fake versions of existing tokens and tokens that claim to represent projects that do not have a token.'
             )}
           </Text>
-          <Text>
+          <Text color="#000">
             {TranslateString(
               1132,
               'This interface can load arbitrary tokens by token addresses. Please take extra caution and do your research when interacting with arbitrary BEP20 tokens.'
             )}
           </Text>
-          <Text>{TranslateString(1134, 'If you purchase an arbitrary token, you may be unable to sell it back.')}</Text>
+          <Text color="#000">{TranslateString(1134, 'If you purchase an arbitrary token, you may be unable to sell it back.')}</Text>
           {tokens.map((token) => {
             return <TokenWarningCard key={token.address} token={token} />
           })}
           <RowBetween>
             <div>
-              <label htmlFor="understand-checkbox" style={{ cursor: 'pointer', userSelect: 'none' }}>
+              <label htmlFor="understand-checkbox" style={{ cursor: 'pointer', userSelect: 'none', color: '#000' }}>
                 <input
                   id="understand-checkbox"
                   type="checkbox"
@@ -134,7 +134,7 @@ export default function TokenWarningModal({
                   checked={understandChecked}
                   onChange={toggleUnderstand}
                 />{' '}
-                <Text as="span" ml="4px">
+                <Text as="span" ml="4px" color="#000">
                   {TranslateString(148, 'I understand')}
                 </Text>
               </label>
@@ -142,7 +142,7 @@ export default function TokenWarningModal({
             <Button
               disabled={!understandChecked}
               variant="danger"
-              style={{ width: '140px' }}
+              style={{ width: '140px', color: '#000' }}
               className="token-dismiss-button"
               onClick={() => {
                 onConfirm()

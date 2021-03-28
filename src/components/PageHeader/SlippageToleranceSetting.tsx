@@ -87,7 +87,7 @@ const SlippageToleranceSettings = ({ translateString }: SlippageToleranceSetting
   return (
     <StyledSlippageToleranceSettings>
       <Label>
-        <Text style={{ fontWeight: 600 }}>{TranslateString(88, 'Slippage tolerance')}</Text>
+        <Text color="#000" style={{ fontWeight: 600 }}>{TranslateString(88, 'Slippage tolerance')}</Text>
         <QuestionHelper
           text={TranslateString(
             186,
@@ -123,7 +123,7 @@ const SlippageToleranceSettings = ({ translateString }: SlippageToleranceSetting
             />
           </Option>
           <Option>
-            <Text fontSize="18px">%</Text>
+            <Text color="#000" fontSize="18px">%</Text>
           </Option>
         </Flex>
       </Options>
